@@ -1,0 +1,7 @@
+USE CMDB;
+GO
+BACKUP DATABASE CMDB
+TO TAPE = '\\.\TapeLocation'
+WITH NOINIT,
+NAME = 'Full Backup of CMDB';
+GO
