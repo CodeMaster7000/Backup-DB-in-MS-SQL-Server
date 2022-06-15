@@ -1,0 +1,8 @@
+USE CMDB;
+GO
+BACKUP DATABASE CMDB
+TO DISK = 'D:\Backup\CMDB.bak'
+WITH FORMAT,
+MEDIANAME = 'CMDBBackup',
+NAME = 'Full Backup of CMDB';
+GO
